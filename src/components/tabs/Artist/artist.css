@@ -1,0 +1,32 @@
+.artist-result {
+    display: flex;
+    flex-direction: row;
+
+
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-img-wrap {
+    height: 50%;
+    overflow: hidden;
+}
+
+
+.genre {
+    margin-right: 5px;
+}
+
+
+.artist-results-wrap {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+    flex-wrap: wrap;
+}

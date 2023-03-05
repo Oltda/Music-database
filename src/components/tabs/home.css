@@ -1,0 +1,59 @@
+.videoTag {
+    width: 30%;
+    border: 3px solid red;
+    position: fixed;
+    z-index: auto;
+}
+
+.lightHouse {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    box-shadow: 3px 7px 53px 7px #888888;
+}
+
+.home-wrapper {
+    position: relative;
+
+    /* height: 500px; */
+    width: 100%;
+
+
+}
+
+.infor-wrapper {
+    width: 60%;
+    text-align: left;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.infor-wrapper p {
+    font-size: 18px;
+}
+
+.infor-wrapper h1 {
+    margin-bottom: 20px;
+}
+
+.spotify-link {
+    text-decoration: none;
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #2d8dd2;
+    color: white;
+}
+
+.spotify-link:hover {
+    color: white;
+    background-color: #1773b5;
+
+}

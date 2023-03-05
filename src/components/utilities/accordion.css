@@ -1,0 +1,19 @@
+.accordion-img-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.artist-name {
+    font-size: 18px;
+    color: #1DB954;
+}
+
+.artist-name-wrap {
+    text-align: left;
+    font-display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    width: 40%;
+}
