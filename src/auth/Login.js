@@ -4,10 +4,10 @@ import { login, logout } from '../state/store'
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 const Login = () => {
-    const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
-    const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI
-    const AUTH_ENDPOINT = process.env.REACT_APP_AUTH_ENDPOINT
-    const RESPONSE_TYPE = process.env.REACT_APP_RESPONSE_TYPE
+    // const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
+    // const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI
+    // const AUTH_ENDPOINT = process.env.REACT_APP_AUTH_ENDPOINT
+    // const RESPONSE_TYPE = process.env.REACT_APP_RESPONSE_TYPE
 
 
     const token = useSelector((state) => state.user.userToken)
@@ -15,7 +15,7 @@ const Login = () => {
 
     useEffect(() => {
 
-        console.log(REDIRECT_URI)
+        console.log(process.env.REACT_APP_REDIRECT_URI)
         const hash = window.location.hash
         let token = window.localStorage.getItem("token")
 
@@ -41,7 +41,7 @@ const Login = () => {
         <>
 
             {!token ? (
-                <Nav.Link href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login</Nav.Link>
+                <Nav.Link href={`${process.env.REACT_APP_AUTH_ENDPOINT}?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&response_type=${process.env.REACT_APP_RESPONSE_TYPE}`}>Login</Nav.Link>
 
             ) : (
                 <Nav.Link onClick={logoutUser}>Logout</Nav.Link>
