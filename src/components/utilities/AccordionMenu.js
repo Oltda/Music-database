@@ -12,13 +12,13 @@ const AccordionMenu = ({ album }) => {
             <Accordion.Item eventKey="0">
                 <Accordion.Header>{album.name}</Accordion.Header>
                 <Accordion.Body className='accordion-img-wrap'>
-                    <div className='artist-name-wrap'>
-                        <p className='artist-name'>
-                            <strong>Artist:</strong> {album.artists[0]?.name}
-                        </p>
-                        <Button href={album.external_urls.spotify} variant="success">Spotify</Button>
-                    </div>
-                    <img src={album.images[1]?.url} alt="" />
+
+
+
+                    <a href={album.external_urls.spotify}>
+                        <img className='album-img' src={album.images[1]?.url} alt="" />
+                    </a>
+
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
@@ -26,10 +26,16 @@ const AccordionMenu = ({ album }) => {
                 <Accordion.Body>
                     <div className='artist-name-wrap'>
                         <p className='artist-name'>
-                            <strong>Release Date:</strong> {album.release_date}
+                            <strong>Artist:</strong>&nbsp;{album.artists[0]?.name}
                         </p>
                         <p className='artist-name'>
-                            <strong>Number of tracks:</strong> {album.total_tracks}
+                            <strong>Release Date:</strong>&nbsp;{album.release_date}
+                        </p>
+                        <p className='artist-name'>
+                            <strong>Number of tracks:</strong>&nbsp;{album.total_tracks}
+                        </p>
+                        <p className='artist-name'>
+                            <strong>Album type:</strong>&nbsp;{album.album_type}
                         </p>
                     </div>
 

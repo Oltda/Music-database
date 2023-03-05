@@ -1,6 +1,7 @@
 .accordion-img-wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -14,6 +15,10 @@
     font-display: flex;
     flex-direction: column;
     justify-content: end;
-
     width: 40%;
+}
+
+.album-img {
+    width: 350px;
+    border: 1px solid red;
 }

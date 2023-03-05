@@ -1,7 +1,10 @@
 //import records from '../../images/records.jpg'
 import "./utilities.css"
+import { useState } from "react";
 
 const HeroImg = ({ picture }) => {
+
+
 
     return (
         <div className='hero-wrapper'>

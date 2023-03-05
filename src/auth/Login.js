@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux"
 import { login, logout } from '../state/store'
-import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 const Login = () => {
     const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
@@ -46,8 +45,6 @@ const Login = () => {
             ) : (
                 <Nav.Link onClick={logoutUser}>Logout</Nav.Link>
             )}
-            {/* <a className="btn btn-primary" href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`} role="button">Login</a> */}
-
         </>
     )
 }
