@@ -14,6 +14,8 @@ const Login = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
+
+        console.log(REDIRECT_URI)
         const hash = window.location.hash
         let token = window.localStorage.getItem("token")
 
